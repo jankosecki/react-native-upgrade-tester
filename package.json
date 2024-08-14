@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "setup": "bundle install && yarn install && yarn pod-install",
+    "pod-install": "(cd ./ios ; RCT_NEW_ARCH_ENABLED=1 USE_FRAMEWORKS=static bundle exec pod install --repo-update)",
     "postinstall": "patch-package",
     "android": "react-native run-android --active-arch-only",
     "ios": "react-native run-ios",

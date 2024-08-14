@@ -1,0 +1,13 @@
+diff --git a/node_modules/react-native-screens/RNScreens.podspec b/node_modules/react-native-screens/RNScreens.podspec
+index be7cc24..14cd2e4 100644
+--- a/node_modules/react-native-screens/RNScreens.podspec
++++ b/node_modules/react-native-screens/RNScreens.podspec
+@@ -27,7 +27,7 @@ Pod::Spec.new do |s|
+     s.subspec "common" do |ss|
+       ss.source_files         = ["common/cpp/**/*.{cpp,h}", "cpp/**/*.{cpp,h}"]
+       ss.header_dir           = "rnscreens"
+-      ss.pod_target_xcconfig  = { "HEADER_SEARCH_PATHS" => "\"$(PODS_TARGET_SRCROOT)/common/cpp\"" }
++      ss.pod_target_xcconfig  = { "HEADER_SEARCH_PATHS" => "\"$(PODS_TARGET_SRCROOT)/common/cpp/react/renderer/components/\"" }
+     end
+   end
+ 
