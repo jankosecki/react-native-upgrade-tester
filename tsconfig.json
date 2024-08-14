@@ -1,3 +1,21 @@
 {
-  "extends": "@react-native/typescript-config/tsconfig.json"
+  "extends": "@react-native/typescript-config/tsconfig.json",     /* Recommended React Native TSConfig base */
+  "compilerOptions": {
+    "jsx": "react",
+    /* Visit https://aka.ms/tsconfig.json to read more about this file */
+
+    // Required for react-native-incall-manager package
+    "allowJs": true,
+
+    "lib": [
+      "es2019",
+      "es2022.Array"
+    ],
+
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+
+    /* Completeness */
+    "skipLibCheck": false /* Skip type checking all .d.ts files. */
+  },
 }
